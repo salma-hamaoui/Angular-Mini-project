@@ -1,0 +1,22 @@
+<div class="container">
+<div class="card shadow mb-4">
+<div class="card-body">
+<table class="table table-striped">
+<tr> <th>Id</th><th>type batiment</th> <th>Surface</th> <th>nombre de chambre</th><th>adresse</th><th>prix</th> </tr>
+<tbody *ngFor="let batiment of batiments">
+<tr >
+<td>{{batiment.idBatiment}}</td>
+<td>{{batiment.type}}</td>
+<td>{{batiment.surface}}</td>
+<td>{{batiment.nbrChambre }}</td>
+  <td>{{batiment.adresse }}</td>
+  <td>{{batiment.prix }}</td>
+  <td><a class="btn btn-danger" (click)="supprimerBatiment(batiment)">Supprimer</a></td>
+  <td><a class="btn btn-success" [routerLink]="['/updateBatiment',batiment.idBatiment]">Modifier</a></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>

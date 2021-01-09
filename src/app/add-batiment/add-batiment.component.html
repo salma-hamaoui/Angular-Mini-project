@@ -1,0 +1,40 @@
+<div class="container">
+<div>
+<h2>Ajouter un batiment :</h2>
+</div>
+  <form >
+<div class="col-sm-2 col-md-2 col-lg-2">
+<label >ID Batiment</label>
+<input type="number" [(ngModel)]="newBatiment.idBatiment"
+name="idProduit" class="form-control">
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4" >
+<label >type</label>
+<input type="text"[(ngModel)]= "newBatiment.type"
+name="type" class="form-control">
+</div>
+<div class="col-sm-2 col-md-2 col-lg-2">
+<label >surface</label>
+<input type="number" [(ngModel)]= "newBatiment.surface"
+name="prixProduit" class="form-control">
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+<label >nbrchambare</label>
+<input type="text" [(ngModel)]= "newBatiment.nbrChambre"
+name="dateCreation" class="form-control">
+</div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+<label >adresse</label>
+<input type="text" [(ngModel)]= "newBatiment.adresse"
+name="dateCreation" class="form-control">
+</div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+<label >prix</label>
+<input type="text" [(ngModel)]= "newBatiment.prix"
+name="dateCreation" class="form-control">
+</div>
+<div class="mt-2">
+<button type="submit" (click)="addBatiment()" class="btn btn-outline-success">Ajouter</button>
+</div>
+</form>
+</div>

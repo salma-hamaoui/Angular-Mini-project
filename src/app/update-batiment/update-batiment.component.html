@@ -1,0 +1,42 @@
+<div class="container">
+<div>
+<h2>Modifier un Batiment :</h2>
+</div>
+<form >
+<div class="col-sm-2 col-md-2 col-lg-2">
+<label >ID Batiment</label>
+<input type="number" [(ngModel)]="currentBatiment.idBatiment"
+name="idBatiment" class="form-control">
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4" >
+<label >Type de Batiment</label>
+<input type="text"[(ngModel)]= "currentBatiment.type"
+name="type" class="form-control">
+</div>
+<div class="col-sm-2 col-md-2 col-lg-2">
+<label >Surface de Batiment</label>
+<input type="number" [(ngModel)]= "currentBatiment.surface"
+name="surface" class="form-control">
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+<label >Nombre de chambre</label>
+<input type="number" [ngModel]="currentBatiment.nbrChambre"
+name="dateCreation" class="form-control">
+</div>
+
+  <div class="col-sm-4 col-md-4 col-lg-4" >
+<label >Adresse de Batiment</label>
+<input type="text"[(ngModel)]= "currentBatiment.adresse"
+name="adresse" class="form-control">
+</div>
+  <div class="col-sm-4 col-md-4 col-lg-4" >
+<label >Prix de Batiment</label>
+<input type="number"[(ngModel)]= "currentBatiment.prix"
+name="prix" class="form-control">
+</div>
+  <div class="mt-2">
+<button type="submit" (click)="updateBatiment()" class="btn btn-success">Modifer</button>
+</div>
+</form>
+</div>
+
